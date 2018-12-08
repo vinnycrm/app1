@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+deploy:
+  provider: script
+  script: bash docker_push.sh
