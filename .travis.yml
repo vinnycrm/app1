@@ -1,11 +1,13 @@
 before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -qq python3.2 python2.7
+ - sudo apt-get update 
+ - sudo apt-get install python3.5
 
 python:
  - "3.5"
+
 services:
   - docker
+
 deploy:
   provider: script
   script: bash docker_push.sh
